@@ -9,7 +9,7 @@ export default class LoginForm extends Component {
     };
   }
 
-  setUser = ({ user, isUser }) => {
+    setUser = ({ user, isUser }) => {
     if (isUser) {
       this.setError("User name taken");
     } else {
@@ -28,9 +28,9 @@ export default class LoginForm extends Component {
     this.setState({ nickname: event.target.value });
   };
 
-    setError = (error) => {
-      this.setState=({error})
-  }  
+  setError = (error) => {
+    this.setState = { error };
+  };
 
   render() {
     const { nickname, error } = this.state;
