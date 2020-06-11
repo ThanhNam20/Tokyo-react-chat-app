@@ -1,8 +1,9 @@
 const { v4: uuidv4 } = require("uuid");
 
-const createUser = ({ name = "" } = {}) => ({
+const createUser = ({ name = "",scoketId =null } = {}) => ({
   id: uuidv4(),
   name,
+  scoketId
 });
 
 const createMessage = ({ message = "", sender = "" } = {}) => ({
